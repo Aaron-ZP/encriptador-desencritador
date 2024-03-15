@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criptografía espacial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <img class="encabezado-img" src="assets/astrounautaheader.svg" alt="logo Astrounauta">
+    </header>
+    <main class="Contenido">
+        <section class="Contenido-Izquierda">
+            <textarea id="input" class="Contenido-Izquierda-textarea" placeholder="Digite su texto"></textarea>
+
+            <div class="Contenido-Izquierda-boton-alerta">
+                <div class="Contenido-Izquierda-alerta"><p><img src="assets/alert.svg" alt="alert">Solo letras minúsculas y sin acentos.</p></div>
+                <div class="Contenido-Izquierda-botones">
+                     <button onclick="criptografar()" class="Contenido-Izquierda-btn-crip">Cifrar</button>
+                     <button onclick="descriptografar()" class="Contenido-Izquierda-btn-descrip">Descifrar</button>
+                </div>
+            </div>
+        </section>
+        <section class="Contenido-derecha">
+            
+                <textarea id="Contenido-derecha-text" class="Contenido-derecha-text"></textarea>
+                <button onclick="copiarTexto()" id="Contenido-derecha-btn-copiar" class="Contenido-derecha-btn-copiar">Copiar</button>
+            
+                <img id="Contenido-derecha-img" class="Contenido-derecha-img" src="assets/astronauta.svg" alt="Cachorro Astrounauta 404">
+                <h1 id="Contenido-derecha-h1" class="Contenido-derecha-h1">No se han encontrado mensajes</h1>
+                <p id="Contenido-derecha-p" class="Contenido-derecha-p">Escriba el texto que desea cifrar o descifrar.</p>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p class="rodape-texto">Desarrollado por Aaron Zaragoza.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
